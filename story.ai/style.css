@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+/* styles for header */
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -40,6 +42,7 @@ nav {
     padding: 16px;
     border-radius: 56px;
     border: none;
+    cursor: pointer;
 }
 
 .header main{
@@ -101,4 +104,101 @@ form{
     background-color: #FFFFFF;
     border: 1px solid #787777;
     border-radius: 56px;
+}
+
+/* styles for main */
+.main{
+    height: 75rem;
+    background-color: #FFFFFF;
+    padding: 20px 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 34.5rem;
+}
+
+.main .heading{
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    color: #131313;
+    padding: 16px 0 8px;
+}
+hr{
+    height: 4px;
+    width: 124px;
+    background-color: #EECCD7;
+    border: none;
+}
+
+.main .cards{
+    display: flex;
+    gap: 2rem;
+    padding:1.5rem 0;
+}
+
+.card{
+    height: 26rem;
+    width: 32.525rem;
+    border: 1px solid #E4E4E4;
+    border-radius: 12px;
+    padding: 1rem;
+    /* background-image: linear-gradient(0deg, #E4E4E4, #E4E4E4); */
+    background-color:#FFFFFF;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.float-text{
+    float: right;
+    padding:10px;
+}
+
+.title{
+    color: #131313;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+.date{
+    color: #787777;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu{
+    width: 30px;
+    height: 30px;
+}
+
+.info{
+    padding: 24px 0 10px;
+}
+
+.info img{
+    width: 30.625rem;
+    height: 10.75rem;
+    border-radius: 12px;
+}
+
+.info-text{
+    padding-top: 1rem;
+}
+
+.info-text h3, .info-text p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding-bottom: 8px;
+}
+
+.info-text p{
+    color: #787777;
+}
+
+.info-text h3{
+    color: #131313;
 }
