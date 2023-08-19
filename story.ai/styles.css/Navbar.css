@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Libre+Bodoni&family=Nunito&family=Poppins&family=Roboto&display=swap');
+
+*  {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6.5rem;
+    height: 5rem;
+    background-color: #FFFFFF;
+}
+
+.logo{
+    color: #AA0136;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#menu{
+    display: none;
+}
+.hidden-menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    display:flex;
+    justify-content:space-between;
+    list-style-type: none;
+    margin-right: 10rem;
+}
+
+.nav-links li{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1rem;
+}
+
+.nav-links li a{
+    color: #646363;  
+    text-decoration: none;
+}
+
+/*Smaller screen view*/
+@media screen and (max-width: 1200px){
+    /* Navbar */
+    nav {
+        padding: 0 6rem;
+    }
+
+    .nav-links{
+        margin-right: 5rem;
+    }
+}
+
+/*Tablet view*/
+@media screen and (max-width: 860px){
+    /* Navbar */
+    nav {
+        padding: 0 3rem;
+    }    
+    #menu{
+        display: block;
+        cursor:pointer;
+    }
+    .hidden-menu{
+        display: none;
+        background-color: rgb(256, 256, 256, 0.85)
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        top: 10%;
+        right:0;
+        z-index: 1;
+        list-style-type: none;
+        transition: all 0.3s ease-in-out;
+        width:50%;
+    }
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+        gap:1.5rem;
+    }
+    .nav-links a{
+        margin: 10px 0 0 0;
+        border-bottom:1px solid #EECCD7;
+        transition:all 0.3s ease-in-out;
+    }
+}
+
+
+@media only screen and(min-width: 320px) and (max-width: 480px){
+    nav {
+        padding: 0 2rem;
+    }
+
+    .nav-links li{
+        font-size: 0.875;
+    }
+}

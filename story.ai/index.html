@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css/Navbar.css">
+    <link rel="stylesheet" href="styles.css/header.css">
+    <link rel="stylesheet" href="styles.css/main.css">
     <script src="https://kit.fontawesome.com/07fdfe95f8.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -13,6 +15,10 @@
     <section class="header">
         <nav>
             <p class = "logo">story.ai</p>
+            
+            <img src="images/menu.png" alt="menu button" id="menu">
+
+            <div class="hidden-menu" id = "hidden-menu">
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Stories</a></li>
@@ -21,6 +27,7 @@
                 <li><a href="#">Contact us</a></li>
             </ul>
             <button class="header-btn">Get Started</button>
+        </div>
         </nav>
         <main>
             <img src="images/Modern cute chatbot illustration set 3.png" alt="cute chatbot" class="header-img">
@@ -32,7 +39,7 @@
                     <input type="email"
                     name="email" id="email"
                     placeholder="Enter your email">
-                    <button class="header-btn">Suscribe</button>
+                    <button class="header-btn1">Suscribe</button>
                 </form>
             </div>
             <img src="images/Modern cute chatbot illustration set 4.png" alt="cute chatbot" class="header-img1">
@@ -57,7 +64,7 @@
                     <div class="info">
                         <img src="images/Rectangle 3588.png" alt="">
                         <div class="info-text">
-                            <h3>fun ways to improve your kids learning culture</h3>
+                            <h3>Fun ways to improve your kids learning culture</h3>
                             <p>It can be hard trying to get kids to read and focus at the same time. I know hard it is because I have been there. 
                                 Being ...</p>
                         </div>
@@ -77,7 +84,7 @@
                     <div class="info">
                         <img src="images/unsplash_DP0LMBAIzZQ.png" alt="">
                         <div class="info-text">
-                            <h3>more fun with 3d illustrations</h3>
+                            <h3>More fun with 3d illustrations</h3>
                             <p>With a well thought inspiration on including 3d illustration generator upcoming. We are trilled about what the future holds...</p>
                         </div>
                     </div>
@@ -89,7 +96,8 @@
             <h1 class="heading">All blog post</h1>
             <hr/>
             <div class="number">
-                <div class="cards">
+                <div class="grid-cards"> 
+                    <!-- make height fit content -->
 
                     <div class="all-card">
                         <div class="card-header">
@@ -216,5 +224,8 @@
             <i class="fa-regular fa-bars"></i>
         </div>
     </footer>
+
+
+    <script src="main.js"></script>
 </body>
 </html>
