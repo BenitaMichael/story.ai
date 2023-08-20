@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 .header-btn, .header-btn1{
     background-color: #AA0136;
@@ -197,14 +201,10 @@ form{
 
 
 
-
+/* @media (max-width: 600px){ */
 @media only screen and(min-width: 320px) and (max-width: 480px){
-    .header-btn1
-    
-
-
-    .header main{
-        height:20.5rem;
+   .header main{
+        height:22.5rem;
     }
 
     .header-text{
@@ -226,58 +226,21 @@ form{
     .header-img, .header-img1{
         display: none;
     }
-    
+
     form{
         margin-top:2.25rem;
         display: block;
     }
     
     #email{
-        width: 27.1875rem;
-        font-size: 1rem;
-        padding: 0.75rem 2rem;
-        font-weight: 500;
-        line-height: 1.375rem;
-        color: #717171;
-        background-color: #FFFFFF;
-        border: 1px solid #787777;
-        border-radius: 56px;
-    }
-    
-    
-    /*Smaller screen view*/
-    @media screen and (max-width: 1200px){
-    .header-text h1{
-        font-size: 3.2rem;
-    }
-    .header-text h3{
-        font-size: 1.9rem;
-    }
-    .header-text p{
-        font-size: 0.92rem;
-    }
-    form{
-        gap: 18px;
-    }
-    
-    #email{
-        width: 300px;
-    }
-    .header-img{
-        height: 400px;
-        width: 300px;
-    }
-    
-    .header-img1{
-        width: 200px;
-        height: 210px;
-        align-self: flex-end;
+        width:90%;
+        font-size: 0.75rem;
+        padding: 0.6825rem 1.4375rem;
+        margin-bottom: 1.5rem;
     }
     .header-btn1{
-        width:8rem;
-        padding: 16px;
-        border-radius: 56px;
+        width: 90%;
+        font-size: 0.75rem;
+        padding: 0.8825rem;
     }
-    }
-    
 }
