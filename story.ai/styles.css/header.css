@@ -31,13 +31,40 @@ body{
 .header-text{
     text-align: center;
 }
+.blog_design{
+    display: inline-block;
+    position: relative;
+
+}
+
+.vl{
+    border-left: 4px solid #AA0136;
+    height: 4rem;
+    position: absolute;
+    animation: moveAcrossText 3s;
+}
+
+.black{
+    border-left: 4px solid #000000
+}
+
 .header-text h1{
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 4rem;
     letter-spacing: -0.25px;
-    color:#AA0136
+    color:#AA0136;
 }
+
+#first{
+    opacity: 0;
+}
+
+#second{
+    opacity: 0;
+}
+
+
 .header-text h3{
     font-size: 2rem;
     font-weight: 400;
